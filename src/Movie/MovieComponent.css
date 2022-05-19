@@ -1,0 +1,11 @@
+.movie-app > .row {
+    overflow-x : auto;
+    flex-wrap: nowrap;
+    margin-top : 3rem !important;
+}
+
+ .heading{
+    width : 100%;
+    display: flex;
+} 
+
