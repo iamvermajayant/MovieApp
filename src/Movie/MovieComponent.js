@@ -10,9 +10,11 @@ const MovieComponent = () => {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
   const [addMovieList, setAddMovieList] = useState([]);
+  
 
   const getMovies = async (search) => {
-    const url = `http://www.omdbapi.com/?s=${search}&apikey=f9533fcf`;
+    //const proxy = 'https://cors-anywhere.herokuapp.com/';
+    const url = `https://www.omdbapi.com/?s=${search}&apikey=f9533fcf`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
