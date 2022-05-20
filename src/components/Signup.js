@@ -24,7 +24,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center flex-md-column">
+    <div className="d-flex align-items-center justify-content-center flex-column">
       <div className="p-4 box backgroundbox">
         <h2 className="mb-3">Movie App Signup</h2>
         {error && <Alert variant="danger">{error}</Alert>}
