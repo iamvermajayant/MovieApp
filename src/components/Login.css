@@ -1,5 +1,19 @@
 .backgroundbox{
     box-shadow: 0 3px 10px rgba(203, 54, 54, 0.2);
-    max-width: 600px;
-     
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left : 20rem; */
+    margin-top: 10rem !important;
+}
+
+.backgroundbox2{
+    box-shadow: 0 3px 10px rgba(203, 54, 54, 0.2);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left : 20rem;
+    margin-top: 1rem !important; */
+    /* align-items: center;
+    justify-content: center; */
 }

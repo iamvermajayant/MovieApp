@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { useUserAuth } from "../context/UserAuthContext";
+import './Login.css';
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -23,9 +24,9 @@ const Signup = () => {
   };
 
   return (
-    <>
-      <div className="p-4 box">
-        <h2 className="mb-3">Firebase Auth Signup</h2>
+    <div className="d-flex align-items-center justify-content-center flex-md-column">
+      <div className="p-4 box backgroundbox">
+        <h2 className="mb-3">Movie App Signup</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -51,10 +52,10 @@ const Signup = () => {
           </div>
         </Form>
       </div>
-      <div className="p-4 box mt-3 text-center">
+      <div className="p-4 box mt-3 text-center backgroundbox2">
         Already have an account? <Link to="/">Log In</Link>
       </div>
-    </>
+    </div>
   );
 };
 

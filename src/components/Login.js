@@ -35,9 +35,9 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div className="d-flex align-items-center justify-content-center flex-column">
       <div className="p-4 box backgroundbox">
-        <h2 className="mb-3">Firebase Auth Login</h2>
+        <h2 className="mb-3">Movie App Login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -71,10 +71,10 @@ const Login = () => {
           />
         </div>
       </div>
-      <div className="p-4 box mt-3 text-center">
+      <div className="p-4 box mt-3 text-center backgroundbox2">
         Don't have an account? <Link to="/signup">Sign up</Link>
       </div>
-    </>
+    </div>
   );
 };
 
