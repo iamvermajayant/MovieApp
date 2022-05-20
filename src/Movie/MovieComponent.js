@@ -19,7 +19,7 @@ const MovieComponent = () => {
     const response = await fetch(url);
     const responseJson = await response.json();
 
-    console.log(responseJson);
+    // console.log(responseJson);
     if (responseJson.Search) {
       setMovies(responseJson.Search);
     }
